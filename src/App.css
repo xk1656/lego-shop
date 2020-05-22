@@ -1,0 +1,13 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  font-family: "Signika", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px 40px;
+}
