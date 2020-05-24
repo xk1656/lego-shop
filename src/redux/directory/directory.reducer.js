@@ -1,14 +1,14 @@
 const INIT_STATE = {
   sections: [
     {
-      title: "Ninjago™",
+      title: "NINJAGO®",
       titleImg:
         "https://www.lego.com/cdn/cs/set/assets/bltc26efeafda5f77e6/ninjago_logo_neg_300w.png",
       imageUrl:
         "https://www.lego.com/cdn/cs/set/assets/blta27e8e4a28ab4f71/Theme-All-Page-Image-NINJAGO.jpg",
       id: 1,
       size: "med",
-      linkUrl: "shop/hats",
+      linkUrl: "shop/ninjago",
     },
     {
       title: "City",
@@ -17,7 +17,7 @@ const INIT_STATE = {
       imageUrl:
         "https://www.lego.com/cdn/cs/set/assets/blt4b0d7b36964e35f3/Theme-All-Page-Image-City.jpg",
       id: 2,
-      linkUrl: "shop/sneakers",
+      linkUrl: "shop/city",
     },
     {
       title: "Star War",
@@ -27,7 +27,7 @@ const INIT_STATE = {
         "https://www.lego.com/cdn/cs/set/assets/bltaf67a5cb96b69b76/Theme-All-Page-Image-Star-Wars.jpg",
       id: 3,
       size: "med1",
-      linkUrl: "shop/jackets",
+      linkUrl: "shop/starwars",
     },
     {
       title: "Technic™",
@@ -37,7 +37,7 @@ const INIT_STATE = {
         "https://www.lego.com/cdn/cs/set/assets/blt8ae7f39996130a1c/Theme-All-Page-Image-Technic.jpg",
       size: "large",
       id: 4,
-      linkUrl: "shop/womens",
+      linkUrl: "shop/technic",
     },
     {
       title: "Jurassic World™",
@@ -47,7 +47,7 @@ const INIT_STATE = {
         "https://www.lego.com/cdn/cs/set/assets/blt512918fec3b7ae4f/Theme-All-Page-Image-Jurassic-World.jpg",
       size: "large",
       id: 5,
-      linkUrl: "shop/mens",
+      linkUrl: "shop/jurassicworld",
     },
   ],
 };
