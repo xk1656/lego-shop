@@ -27,7 +27,7 @@ const INIT_STATE = {
         "https://www.lego.com/cdn/cs/set/assets/bltaf67a5cb96b69b76/Theme-All-Page-Image-Star-Wars.jpg",
       id: 3,
       size: "med1",
-      linkUrl: "shop/starwars",
+      linkUrl: "shop/star%20wars",
     },
     {
       title: "Technic™",
@@ -47,7 +47,7 @@ const INIT_STATE = {
         "https://www.lego.com/cdn/cs/set/assets/blt512918fec3b7ae4f/Theme-All-Page-Image-Jurassic-World.jpg",
       size: "large",
       id: 5,
-      linkUrl: "shop/jurassicworld",
+      linkUrl: "shop/jurassic%20world",
     },
   ],
 };

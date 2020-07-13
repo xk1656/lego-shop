@@ -10,32 +10,43 @@ import {
   addItem,
   removeItem,
 } from "../../redux/cart/cart.actions";
+import {
+  CheckoutItemContainer,
+  ImageContainer,
+  NameContainer,
+  PriceContainer,
+  QuantityContainer,
+  DecreaseContainer,
+  IncreaseContainer,
+  ItemQuantityContainer,
+  IconLineContainer,
+} from "./checkout-item.styles";
 
 const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
   const { name, imageUrl, quantity, price } = cartItem;
   return (
-    <div className="checkout-item">
-      <div className="image-container">
+    <CheckoutItemContainer>
+      <ImageContainer>
         <img src={imageUrl} alt="item"></img>
-      </div>
-      <div className="name">{name}</div>
-      <div className="quantity">
-        <div className="decrease" onClick={() => removeItem(cartItem)}>
+      </ImageContainer>
+      <NameContainer>{name}</NameContainer>
+      <QuantityContainer>
+        <DecreaseContainer onClick={() => removeItem(cartItem)}>
           <Decrease />
-        </div>
-        <div className="item_quantity">
+        </DecreaseContainer>
+        <ItemQuantityContainer>
           <span>{quantity}</span>
-        </div>
-        <div className="increase" onClick={() => addItem(cartItem)}>
+        </ItemQuantityContainer>
+        <IncreaseContainer onClick={() => addItem(cartItem)}>
           <Increase />
-        </div>
-      </div>
-      <div className="icon-line">
+        </IncreaseContainer>
+      </QuantityContainer>
+      <IconLineContainer>
         <RemoveIcon className="icon" onClick={() => clearItem(cartItem)} />
         <WishIcon className="icon" />
-      </div>
-      <div className="price">{(price * quantity).toFixed(2)}</div>
-    </div>
+      </IconLineContainer>
+      <PriceContainer>{(price * quantity).toFixed(2)}</PriceContainer>
+    </CheckoutItemContainer>
   );
 };
 
