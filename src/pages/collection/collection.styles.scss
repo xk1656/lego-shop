@@ -16,6 +16,10 @@
       border-color: rgb(224, 224, 224);
       border-width: 0 1px 1px 0;
     }
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   .theme-title {

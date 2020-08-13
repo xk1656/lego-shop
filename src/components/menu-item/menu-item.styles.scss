@@ -28,6 +28,10 @@
     margin-left: 7.5px;
   }
 
+  @media screen and (max-width: 800px) {
+    height: 200px !important;
+  }
+
   .content {
     height: 100px;
     width: 140px;
@@ -55,6 +59,10 @@
       height: 72%;
       background-position: center;
       background-size: cover;
+      @media screen and (max-width: 800px) {
+        width: 62%;
+        height: 41%;
+      }
     }
   }
 

@@ -27,6 +27,10 @@ export const CheckoutItemContainer = styled.div`
   padding: 15px 0;
   font-size: 20px;
   align-items: center;
+
+  @media screen and (max-width: 800px) {
+    font-size: 14px;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -41,10 +45,16 @@ export const ImageContainer = styled.div`
 
 export const NameContainer = styled.div`
   width: 20%;
+  @media screen and (max-width: 800px) {
+    width: 19%;
+  }
 `;
 export const PriceContainer = styled.div`
   width: 20%;
   text-align: right;
+  @media screen and (max-width: 800px) {
+    width: 17%;
+  }
 `;
 
 export const QuantityContainer = styled.div`
@@ -53,6 +63,10 @@ export const QuantityContainer = styled.div`
   height: 2.7rem;
   border-radius: 5px;
   flex: 1 1 0%;
+
+  @media screen and (max-width: 800px) {
+    width: 30%;
+  }
 `;
 
 export const DecreaseContainer = styled.div`
@@ -78,6 +92,9 @@ export const ItemQuantityContainer = styled.div`
     justify-content: center;
     align-items: center;
     height: 100%;
+    @media screen and (max-width: 800px) {
+      font-size: 18px;
+    }
   }
 `;
 
@@ -90,6 +107,10 @@ export const IconLineContainer = styled.div`
   padding: 0px 30px;
   flex: 1 1 0%;
   display: flex;
+
+  @media screen and (max-width: 800px) {
+    padding: 0 12px;
+  }
 
   .icon {
     width: 24px;

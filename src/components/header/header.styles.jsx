@@ -31,6 +31,9 @@ export const OptionsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media screen and (max-width: 800px) {
+    width: 80%;
+  }
 `;
 
 export const OptionLink = styled(Link)`
@@ -39,6 +42,10 @@ export const OptionLink = styled(Link)`
   font-size: 0.875rem;
   text-transform: uppercase;
   cursor: pointer;
+
+  @media screen and (max-width: 800px) {
+    padding: 0;
+  }
 `;
 
 export const NameContainer = styled.div`
@@ -46,4 +53,8 @@ export const NameContainer = styled.div`
   margin-right: 1rem;
   font-size: 0.875rem;
   text-transform: uppercase;
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 `;
